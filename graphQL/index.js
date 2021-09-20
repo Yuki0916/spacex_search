@@ -53,6 +53,7 @@ export const GET_LAUNCHES_LIST = gql`
     launchesPast(limit: 9, offset: $offset) {
       id
       mission_name
+      details
       launch_date_local
       launch_success
       launch_site {
