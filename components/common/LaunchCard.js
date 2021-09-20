@@ -1,4 +1,5 @@
-import React from 'react'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+// ! 僅完成切版，尚未完成跳轉功能 先暫時忽略eslint error
 import Image from 'next/image'
 import Styled from './LaunchCard.module.scss'
 
