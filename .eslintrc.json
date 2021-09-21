@@ -19,11 +19,18 @@
     "plugin:jsx-a11y/recommended",
     "next/core-web-vitals"
   ],
-  "plugins": ["react", "react-hooks", "prettier"],
+  "plugins": ["react", "react-hooks", "prettier", "jsx-a11y"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
-    "prettier/prettier": ["error", { "printWidth": 80 }]
+    "prettier/prettier": ["error", { "printWidth": 80 }],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "aspects": ["invalidHref"]
+      }
+    ]
   }
 }
