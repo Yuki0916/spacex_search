@@ -4,12 +4,12 @@ import Styled from './LaunchCard.module.scss'
 
 function LaunchCard({ id, imageUrl, launchDate, missionName, details }) {
   return (
-    <div className={Styled.Container}>
+    <div className={Styled.container}>
       {imageUrl && (
         <Link href={`launch/${id}`} passHref>
-          <div className={Styled.ImageContainer}>
+          <div className={Styled.imageContainer}>
             <Image
-              className={Styled.Image}
+              className={Styled.imgae}
               src={imageUrl}
               alt={`LaunchImage${id}`}
               layout='fill'
@@ -19,17 +19,17 @@ function LaunchCard({ id, imageUrl, launchDate, missionName, details }) {
         </Link>
       )}
       <Link href={`launch/${id}`} passHref>
-        <div className={Styled.Title}>
+        <div className={Styled.title}>
           <a>{missionName}</a>
         </div>
       </Link>
       <Link href={`launch/${id}`} passHref>
-        <div className={Styled.Time}>
+        <div className={Styled.time}>
           <a>{launchDate}</a>
         </div>
       </Link>
       <Link href={`launch/${id}`} passHref>
-        <div className={Styled.Content}>
+        <div className={Styled.content}>
           <a>{details}</a>
         </div>
       </Link>
