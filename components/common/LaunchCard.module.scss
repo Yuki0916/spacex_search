@@ -2,6 +2,7 @@
   width: calc((100% - 100px) / 3);
   a:hover {
     color: green;
+    cursor: pointer;
   }
 }
 .imageContainer {
@@ -21,6 +22,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: default;
 }
 
 .content {
@@ -32,12 +34,14 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: default;
 }
 
 .time {
   color: rgb(105, 91, 8);
   text-align: right;
   line-height: 2rem;
+  cursor: default;
 }
 
 @media screen and (max-width: 600px) {
